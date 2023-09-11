@@ -7,7 +7,7 @@ home=$4
 docroot=$5
 
 #default script name
-mainScript="src/index.js"
+mainScript="index.js"
 nodeDir="$home/$user/web/$domain/nodeapp"
 
 mkdir $nodeDir
