@@ -1,5 +1,19 @@
 # Steps for SvelteKit
 
+Before cloning this repository, you should use the @sveltejs/adapter-node, to do this run:
+* `npm install -D @sveltejs/adapter-node`
+* Now edit your `svelte.config.js` adapter to this:
+  ```
+  import adapter from '@sveltejs/adapter-node';
+  ```
+Build your project:
+* `npm run build`
+Check if preview works:
+* `npm run preview`
+
+For good measure I also copied to the `build` folder before uploading it, `the package.json`, just in case you need to run an `npm install` on your server.
+
+
 * Git Clone this repository
 * Run `install.sh` to install PM2 and move automatically the template files
 * Upload your app with ssh to this path: `/home/<user>/web/<domain>/nodeapp/`
