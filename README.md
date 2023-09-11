@@ -1,3 +1,14 @@
+# Steps for SvelteKit
+
+* Git Clone this repository
+* Run `install.sh` to install PM2 and move automatically the template files
+* Upload your app with ssh to this path: `/home/<user>/web/<domain>/nodeapp/`
+* CD to `/home/<user>/web/<domain>/nodeapp/` and run index.js with `pm2 start index.js --name sveltekit` (You can change sveltekit to whatever you want)
+* Go back to your HestiaCP panel -> WEB -> Pick a domain and open settings -> Advanced Options -> Change Proxy Template to `NodeJS`
+* Done, everything should be up and running
+
+If you want to stop your website, run `pm2 stop sveltekit` (or replace it with whatever name you choose)
+
 # HestiaCP with Node.JS support.
 
 With this repo you can run multiples NodeJS Apps at same time.
