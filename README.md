@@ -1,27 +1,33 @@
 # Steps for SvelteKit
 
+### Locally before upload:
+
 Before cloning this repository, you should use the `@sveltejs/adapter-node`, to do this run:
 * `npm install -D @sveltejs/adapter-node`
 * Now edit your `svelte.config.js` adapter to this:
   ```
   import adapter from '@sveltejs/adapter-node';
   ```
-Build your project:
+#### Build your project:
 * `npm run build`
-Check if preview works:
+#### Check if preview works:
 * `npm run preview`
 
 For good measure I also copied to the `build` folder before uploading it, the `package.json`, just in case you need to run an `npm install` on your server.
 
+### On your server (with HestiaCP):
 
 * Git Clone this repository
 * Run `install.sh` to install PM2 and move automatically the template files
 * Upload your app with ssh to this path: `/home/<user>/web/<domain>/nodeapp/`
-* CD to `/home/<user>/web/<domain>/nodeapp/` and run index.js with `pm2 start index.js --name sveltekit` (You can change sveltekit to whatever you want)
+* `cd` to `/home/<user>/web/<domain>/nodeapp/` and run index.js with `pm2 start index.js --name sveltekit` (You can change sveltekit to whatever you want)
 * Go back to your HestiaCP panel -> WEB -> Pick a domain and open settings -> Advanced Options -> Change Proxy Template to `NodeJS`
 * Done, everything should be up and running
 
-If you want to stop your website, run `pm2 stop sveltekit` (or replace it with whatever name you choose)
+#### If you want to see if your website is running, run `pm2 list` and check if there's the running process.
+#### If you want to stop your website, run `pm2 stop sveltekit` (Replace sveltekit with whatever name you choose).
+#### If you want to see logs of pm2, run `pm2 logs sveltekit` (Replace sveltekit with whatever name you choose) and to close them use CTRL-Z.
+#### If you want to delete the website process, run `pm2 delete sveltekit` (Replace sveltekit with whatever name you choose).
 
 ## Demo
 [Demo](https://anonymousgca.eu)
