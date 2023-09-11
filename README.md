@@ -18,9 +18,11 @@ For good measure I also copied to the `build` folder before uploading it, the `p
 ### On your server (with HestiaCP):
 
 * Git Clone this repository
-* Run `install.sh` to install PM2 and move automatically the template files
-* Upload your app with ssh to this path: `/home/<user>/web/<domain>/nodeapp/`
-* `cd` to `/home/<user>/web/<domain>/nodeapp/` and run index.js with `pm2 start index.js --name sveltekit` (You can change sveltekit to whatever you want)
+* Run `install.sh` to install PM2 and move automatically the template files.
+* Upload your app with ssh to this path: `/home/<user>/web/<domain>/nodeapp/`.
+* Upload your `package.json` to `/home/<user>/web/<domain>/nodeapp/`.
+* Run `npm install` inside `/home/<user>/web/<domain>/nodeapp/`.
+* Run `index.js` inside your `/home/<user>/web/<domain>/nodeapp/` with `pm2 start index.js --name sveltekit` (You can change sveltekit to whatever you want)
 * Go back to your HestiaCP panel -> WEB -> Pick a domain and open settings -> Advanced Options -> Change Proxy Template to `NodeJS`
 * Done, everything should be up and running
 
