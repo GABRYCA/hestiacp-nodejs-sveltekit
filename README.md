@@ -11,7 +11,7 @@ Build your project:
 Check if preview works:
 * `npm run preview`
 
-For good measure I also copied to the `build` folder before uploading it, `the package.json`, just in case you need to run an `npm install` on your server.
+For good measure I also copied to the `build` folder before uploading it, the `package.json`, just in case you need to run an `npm install` on your server.
 
 
 * Git Clone this repository
