@@ -1,6 +1,6 @@
 # Steps for SvelteKit
 
-Before cloning this repository, you should use the @sveltejs/adapter-node, to do this run:
+Before cloning this repository, you should use the `@sveltejs/adapter-node`, to do this run:
 * `npm install -D @sveltejs/adapter-node`
 * Now edit your `svelte.config.js` adapter to this:
   ```
