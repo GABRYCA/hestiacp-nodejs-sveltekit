@@ -100,6 +100,6 @@ For debug propose you can run script with this arguments `NodeJS.sh <user> <doma
 
 #### Documentation
 
-Pm2: [https://pm2.keymetrics.io/docs/usage/quick-start/]
-Info about NGINX Proxy [https://serverfault.com/questions/316157/how-do-i-configure-nginx-proxy-pass-node-js-http-server-via-unix-socket]
+- PM2: [https://pm2.keymetrics.io/docs/usage/quick-start/]
+- Info about NGINX Proxy [https://serverfault.com/questions/316157/how-do-i-configure-nginx-proxy-pass-node-js-http-server-via-unix-socket]
 
